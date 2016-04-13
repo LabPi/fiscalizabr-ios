@@ -14,6 +14,7 @@
 		3146991E1CBDA80F005E7B76 /* fiscalizaBrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3146991D1CBDA80F005E7B76 /* fiscalizaBrTests.swift */; };
 		3146992B1CBDAA5B005E7B76 /* AgeementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3146992A1CBDAA5B005E7B76 /* AgeementViewController.swift */; };
 		3146992D1CBDAAC1005E7B76 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3146992C1CBDAAC1005E7B76 /* FavoriteViewController.swift */; };
+		3146992F1CBDD3D0005E7B76 /* AgreementsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3146992E1CBDD3D0005E7B76 /* AgreementsTVCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		3146991F1CBDA80F005E7B76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3146992A1CBDAA5B005E7B76 /* AgeementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeementViewController.swift; sourceTree = "<group>"; };
 		3146992C1CBDAAC1005E7B76 /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		3146992E1CBDD3D0005E7B76 /* AgreementsTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementsTVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,8 @@
 		314699051CBDA80E005E7B76 /* fiscalizaBr */ = {
 			isa = PBXGroup;
 			children = (
+				314699311CBDE195005E7B76 /* Factorys */,
+				314699301CBDE184005E7B76 /* Images */,
 				314699291CBDA84F005E7B76 /* Models */,
 				314699281CBDA847005E7B76 /* Controllers */,
 				314699061CBDA80E005E7B76 /* AppDelegate.swift */,
@@ -111,8 +115,23 @@
 		314699291CBDA84F005E7B76 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3146992E1CBDD3D0005E7B76 /* AgreementsTVCell.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		314699301CBDE184005E7B76 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		314699311CBDE195005E7B76 /* Factorys */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Factorys;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +237,7 @@
 			files = (
 				3146992B1CBDAA5B005E7B76 /* AgeementViewController.swift in Sources */,
 				314699071CBDA80E005E7B76 /* AppDelegate.swift in Sources */,
+				3146992F1CBDD3D0005E7B76 /* AgreementsTVCell.swift in Sources */,
 				3146992D1CBDAAC1005E7B76 /* FavoriteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +428,7 @@
 				314699241CBDA80F005E7B76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		314699251CBDA80F005E7B76 /* Build configuration list for PBXNativeTarget "fiscalizaBrTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +437,7 @@
 				314699271CBDA80F005E7B76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
