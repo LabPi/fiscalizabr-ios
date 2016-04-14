@@ -15,6 +15,9 @@
 		3146992B1CBDAA5B005E7B76 /* AgeementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3146992A1CBDAA5B005E7B76 /* AgeementViewController.swift */; };
 		3146992D1CBDAAC1005E7B76 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3146992C1CBDAAC1005E7B76 /* FavoriteViewController.swift */; };
 		3146992F1CBDD3D0005E7B76 /* AgreementsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3146992E1CBDD3D0005E7B76 /* AgreementsTVCell.swift */; };
+		31B7BEF01CBF0F9E00B0B4BE /* DetailsAgreementsControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B7BEEF1CBF0F9E00B0B4BE /* DetailsAgreementsControllerViewController.swift */; };
+		31B7BEF21CBF0FBC00B0B4BE /* Agreements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B7BEF11CBF0FBC00B0B4BE /* Agreements.swift */; };
+		31B7BEF41CBF3CB700B0B4BE /* ChangeCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B7BEF31CBF3CB700B0B4BE /* ChangeCity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		3146992A1CBDAA5B005E7B76 /* AgeementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeementViewController.swift; sourceTree = "<group>"; };
 		3146992C1CBDAAC1005E7B76 /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		3146992E1CBDD3D0005E7B76 /* AgreementsTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementsTVCell.swift; sourceTree = "<group>"; };
+		31B7BEEF1CBF0F9E00B0B4BE /* DetailsAgreementsControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsAgreementsControllerViewController.swift; sourceTree = "<group>"; };
+		31B7BEF11CBF0FBC00B0B4BE /* Agreements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Agreements.swift; sourceTree = "<group>"; };
+		31B7BEF31CBF3CB700B0B4BE /* ChangeCity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeCity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,8 @@
 			children = (
 				3146992A1CBDAA5B005E7B76 /* AgeementViewController.swift */,
 				3146992C1CBDAAC1005E7B76 /* FavoriteViewController.swift */,
+				31B7BEEF1CBF0F9E00B0B4BE /* DetailsAgreementsControllerViewController.swift */,
+				31B7BEF31CBF3CB700B0B4BE /* ChangeCity.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -116,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				3146992E1CBDD3D0005E7B76 /* AgreementsTVCell.swift */,
+				31B7BEF11CBF0FBC00B0B4BE /* Agreements.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -235,9 +244,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31B7BEF21CBF0FBC00B0B4BE /* Agreements.swift in Sources */,
 				3146992B1CBDAA5B005E7B76 /* AgeementViewController.swift in Sources */,
+				31B7BEF41CBF3CB700B0B4BE /* ChangeCity.swift in Sources */,
 				314699071CBDA80E005E7B76 /* AppDelegate.swift in Sources */,
 				3146992F1CBDD3D0005E7B76 /* AgreementsTVCell.swift in Sources */,
+				31B7BEF01CBF0F9E00B0B4BE /* DetailsAgreementsControllerViewController.swift in Sources */,
 				3146992D1CBDAAC1005E7B76 /* FavoriteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

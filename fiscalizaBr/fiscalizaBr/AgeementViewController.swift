@@ -25,14 +25,28 @@ class AgeementViewController: UIViewController, UITableViewDelegate,UITableViewD
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("AgreementsTVCell", forIndexPath: indexPath) as!
         AgreementsTVCell;
-        cell.lbName.text = "Convênnio \(indexPath.row)";
-        cell.lbVirgencia.text = "2008 a 2009";
-        cell.lbValor.text = "R$ 3000.000.00"
+        cell.lbName.text = "Obra \(indexPath.row)";
+        cell.lbVirgencia.text = "Janeiro de 2008 à março 2009";
+        cell.lbValor.text = "R$ 3000,000.00 mi";
         return cell;
+    }
+    @IBAction func orderByValues(sender: AnyObject) {
+        let alert = UIAlertController(title: "Odernar por", message: "", preferredStyle: UIAlertControllerStyle.Alert);
+        alert.addAction(UIAlertAction(title: "Valor", style: UIAlertActionStyle.Default, handler: { (UIAlertAction) -> Void in }))
+        alert.addAction(UIAlertAction(title: "Virgência", style: UIAlertActionStyle.Default, handler: { (UIAlertAction) -> Void in }))
+        self.presentViewController(alert, animated: true) { () -> Void in}
+    }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("ShowDetailsAgreements", sender: self);
+        tableView.deselectRowAtIndexPath(indexPath, animated: true);
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func chageCity(sender: AnyObject) {
+        self.performSegueWithIdentifier("AgreementsEditLocalSegue", sender: self);
+    }
+    
 
 }

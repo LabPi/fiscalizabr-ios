@@ -28,69 +28,94 @@
                                     <navigationItem title="FiscalizaBR" id="cMi-v0-WuE">
                                         <rightBarButtonItems>
                                             <barButtonItem image="sort" id="j2U-2O-Dwm">
-                                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="tintColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="orderByValues:" destination="9pv-A4-QxB" id="7dF-qO-vEh"/>
+                                                </connections>
                                             </barButtonItem>
                                             <barButtonItem image="local" id="XwC-XK-v9B">
-                                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="tintColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="chageCity:" destination="9pv-A4-QxB" id="00K-rI-swe"/>
+                                                </connections>
                                             </barButtonItem>
                                         </rightBarButtonItems>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cidade, UF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOn-8t-3pQ">
-                                <rect key="frame" x="11" y="69" width="298" height="21"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="cQZ-Hn-fU2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="04d-FB-H29">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="04d-FB-H29">
                                 <rect key="frame" x="0.0" y="92" width="320" height="427"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AgreementsTVCell" id="Jks-iz-7WY" customClass="AgreementsTVCell" customModule="fiscalizaBr" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="120"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AgreementsTVCell" id="Jks-iz-7WY" customClass="AgreementsTVCell" customModule="fiscalizaBr" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jks-iz-7WY" id="BvT-GN-kuM">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="119"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fev-Li-TFF">
-                                                    <rect key="frame" x="39" y="8" width="248" height="21"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="hdk-Dc-hfI">
+                                                    <rect key="frame" x="15" y="59" width="32" height="32"/>
                                                     <animations/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="haS-wL-tBs">
+                                                    <rect key="frame" x="15" y="3" width="292" height="53"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0B3-RJ-X4c">
+                                                            <rect key="frame" x="24" y="8" width="240" height="27"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fev-Li-TFF">
+                                                                    <rect key="frame" x="28" y="-2" width="235" height="21"/>
+                                                                    <animations/>
+                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <animations/>
+                                                        </view>
+                                                    </subviews>
+                                                    <animations/>
+                                                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Virgência" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7c-Zi-Fbo">
-                                                    <rect key="frame" x="39" y="37" width="248" height="21"/>
+                                                    <rect key="frame" x="67" y="64" width="240" height="21"/>
                                                     <animations/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Valor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5G7-9t-cuu">
-                                                    <rect key="frame" x="39" y="66" width="248" height="21"/>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wam-HA-8Qr">
+                                                    <rect key="frame" x="15" y="99" width="292" height="42"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7J5-eL-zwD">
+                                                            <rect key="frame" x="24" y="8" width="240" height="27"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Valor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5G7-9t-cuu">
+                                                                    <rect key="frame" x="28" y="3" width="235" height="21"/>
+                                                                    <animations/>
+                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <animations/>
+                                                            <color key="backgroundColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </view>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="money" translatesAutoresizingMaskIntoConstraints="NO" id="vWc-cK-2fq">
+                                                            <rect key="frame" x="0.0" y="6" width="32" height="32"/>
+                                                            <animations/>
+                                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </imageView>
+                                                    </subviews>
                                                     <animations/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                    <color key="textColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zbs-Bm-zJT">
-                                                    <rect key="frame" x="8" y="3" width="31" height="32"/>
+                                                    <color key="backgroundColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="y7S-9f-Pjg">
+                                                    <rect key="frame" x="15" y="3" width="32" height="32"/>
                                                     <animations/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="8AL-Wr-U6x">
-                                                    <rect key="frame" x="8" y="37" width="31" height="32"/>
-                                                    <animations/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="money" translatesAutoresizingMaskIntoConstraints="NO" id="AsP-yf-gbR">
-                                                    <rect key="frame" x="8" y="71" width="31" height="32"/>
-                                                    <animations/>
+                                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </imageView>
                                             </subviews>
                                             <animations/>
@@ -104,6 +129,16 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cidade, UF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOn-8t-3pQ">
+                                <rect key="frame" x="11" y="69" width="298" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="cQZ-Hn-fU2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -123,11 +158,67 @@
                     <tabBarItem key="tabBarItem" title="Convênios" image="hands" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="tableViewAgreements" destination="04d-FB-H29" id="v9f-BO-3m6"/>
+                        <segue destination="hwU-Ry-I9W" kind="show" identifier="ShowDetailsAgreements" id="ibU-kU-R9H"/>
+                        <segue destination="hdx-ms-j3G" kind="show" identifier="AgreementsEditLocalSegue" id="3bQ-Xw-yL4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="517" y="-984"/>
+        </scene>
+        <!--Details Agreements Controller View Controller-->
+        <scene sceneID="LSm-hX-aUh">
+            <objects>
+                <viewController id="hwU-Ry-I9W" customClass="DetailsAgreementsControllerViewController" customModule="fiscalizaBr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xHZ-wD-vMG"/>
+                        <viewControllerLayoutGuide type="bottom" id="RaG-Iq-6g5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XlI-oD-Df6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ODI-bB-Ffc">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="sWo-X4-kst"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Detalhes " id="8qB-Ya-Imd">
+                                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="mkN-Cr-Q61">
+                                            <connections>
+                                                <action selector="backNavegation:" destination="hwU-Ry-I9W" id="Zyi-ct-6TB"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <rightBarButtonItems>
+                                            <barButtonItem image="shared" id="CUQ-Rm-CkC">
+                                                <color key="tintColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </barButtonItem>
+                                            <barButtonItem image="star" id="yyO-dK-W8m">
+                                                <color key="tintColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ODI-bB-Ffc" secondAttribute="trailing" id="DRi-ib-IZN"/>
+                            <constraint firstItem="ODI-bB-Ffc" firstAttribute="top" secondItem="xHZ-wD-vMG" secondAttribute="bottom" id="tgX-II-w2h"/>
+                            <constraint firstItem="ODI-bB-Ffc" firstAttribute="leading" secondItem="XlI-oD-Df6" secondAttribute="leading" id="xhF-Kn-fBK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="ZBQ-Tz-cZc" kind="unwind" unwindAction="cancelToPlayersViewController:" id="RQW-ul-INc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PJg-1h-2pK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ZBQ-Tz-cZc" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1148" y="-984"/>
         </scene>
         <!--Favoritos-->
         <scene sceneID="wg7-f3-ORb">
@@ -151,8 +242,18 @@
                                     <navigationItem title="FiscalizaBR" id="Tyk-sr-wE6">
                                         <barButtonItem key="leftBarButtonItem" enabled="NO" id="WJM-C9-5Mq"/>
                                         <rightBarButtonItems>
-                                            <barButtonItem systemItem="add" id="gVB-V2-SqD"/>
-                                            <barButtonItem systemItem="action" id="4b5-Rf-Bs3"/>
+                                            <barButtonItem image="sort" id="gVB-V2-SqD">
+                                                <color key="tintColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="orderByValues:" destination="8rJ-Kc-sve" id="15O-iV-SVM"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem image="local" id="4b5-Rf-Bs3">
+                                                <color key="tintColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="chageCity:" destination="8rJ-Kc-sve" id="kvx-4G-KfK"/>
+                                                </connections>
+                                            </barButtonItem>
                                         </rightBarButtonItems>
                                     </navigationItem>
                                 </items>
@@ -179,10 +280,77 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Favoritos" image="star" id="cPa-gy-q4n"/>
+                    <connections>
+                        <segue destination="hdx-ms-j3G" kind="show" identifier="FavoriteEditLocalSegue" id="j7W-ef-SAw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="517" y="748"/>
+        </scene>
+        <!--Change City-->
+        <scene sceneID="Igu-8m-9DD">
+            <objects>
+                <viewController id="hdx-ms-j3G" customClass="ChangeCity" customModule="fiscalizaBr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6ci-Ea-jR1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z86-pe-Df4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YRG-i2-sbU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L3x-le-dza">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="URc-yc-Qmq"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Editar Localização" id="gAP-sp-Wk5">
+                                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="aXC-JT-Y0i">
+                                            <connections>
+                                                <action selector="backSegue:" destination="hdx-ms-j3G" id="iRB-dU-LFs"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MUNICÍPIO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0if-j7-6zC">
+                                <rect key="frame" x="107" y="231" width="107" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWS-L6-AyL">
+                                <rect key="frame" x="139" y="75" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wak-If-cre">
+                                <rect key="frame" x="15" y="97" width="291" height="73"/>
+                                <animations/>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VfR-mH-4ut">
+                                <rect key="frame" x="15" y="260" width="291" height="73"/>
+                                <animations/>
+                            </pickerView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="L3x-le-dza" firstAttribute="leading" secondItem="YRG-i2-sbU" secondAttribute="leading" id="1pC-Tr-Udt"/>
+                            <constraint firstAttribute="trailing" secondItem="L3x-le-dza" secondAttribute="trailing" id="PLy-aB-12V"/>
+                            <constraint firstItem="L3x-le-dza" firstAttribute="top" secondItem="6ci-Ea-jR1" secondAttribute="bottom" id="z1m-MW-3Nb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ph-nk-tyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="517" y="-124"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -199,11 +367,112 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="Wvf-bO-Nwd" kind="relationship" relationship="viewControllers" id="wRj-T5-8RB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-146" y="-124"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pl5-FX-4SM">
+            <objects>
+                <viewController id="Wvf-bO-Nwd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CVj-qo-peP"/>
+                        <viewControllerLayoutGuide type="bottom" id="oDH-jh-CXm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A8c-rw-udD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="naN-Gr-1c1">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="B0l-uB-wwe"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Pesquisar por" id="yvt-sz-elX"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Valor mínimo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfT-Yr-fY4">
+                                <rect key="frame" x="100" y="131" width="119" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="r5G-Qd-4dq">
+                                <rect key="frame" x="18" y="151" width="284" height="31"/>
+                                <animations/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bMR-Cl-qYb">
+                                <rect key="frame" x="18" y="230" width="284" height="31"/>
+                                <animations/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Valor máximo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4MD-am-DlK">
+                                <rect key="frame" x="99" y="211" width="122" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Iníco Vigência" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pgp-2z-TdT">
+                                <rect key="frame" x="89" y="282" width="143" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Final Vigência" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sH6-5x-EOE">
+                                <rect key="frame" x="89" y="348" width="142" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Situação do Convênio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRg-FS-8hd">
+                                <rect key="frame" x="64" y="422" width="192" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0h-sH-0gb">
+                                <rect key="frame" x="116" y="482" width="88" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="buscar"/>
+                            </button>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="vLW-fR-fFa">
+                                <rect key="frame" x="20" y="302" width="280" height="38"/>
+                                <animations/>
+                                <date key="date" timeIntervalSinceReferenceDate="482300904.25092602">
+                                    <!--2016-04-14 04:28:24 +0000-->
+                                </date>
+                            </datePicker>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="2Tl-mq-mRE">
+                                <rect key="frame" x="20" y="371" width="280" height="38"/>
+                                <animations/>
+                                <date key="date" timeIntervalSinceReferenceDate="482300904.25092602">
+                                    <!--2016-04-14 04:28:24 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="naN-Gr-1c1" secondAttribute="trailing" id="GH4-RZ-syI"/>
+                            <constraint firstItem="naN-Gr-1c1" firstAttribute="top" secondItem="CVj-qo-peP" secondAttribute="bottom" id="Pfi-xY-Os2"/>
+                            <constraint firstItem="naN-Gr-1c1" firstAttribute="leading" secondItem="A8c-rw-udD" secondAttribute="leading" id="g97-lU-xga"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="fGH-ED-jyV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ELp-BM-WE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-138" y="748"/>
         </scene>
     </scenes>
     <resources>
@@ -211,7 +480,11 @@
         <image name="hands" width="77" height="77"/>
         <image name="local" width="66" height="66"/>
         <image name="money" width="77" height="77"/>
+        <image name="shared" width="66" height="66"/>
         <image name="sort" width="66" height="66"/>
         <image name="star" width="77" height="77"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="3bQ-Xw-yL4"/>
+    </inferredMetricsTieBreakers>
 </document>
