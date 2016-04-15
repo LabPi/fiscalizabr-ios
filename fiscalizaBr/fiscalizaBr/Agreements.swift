@@ -8,5 +8,10 @@
 
 import Foundation
 class Agreements{
+    var name:String!
+    var date_initial:NSDate!
+    var date_final:NSDate!
+    var value:Double!
+    var city:String!
     
 }
